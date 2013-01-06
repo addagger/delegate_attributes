@@ -18,7 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+ActiveRecord model:
+
+    class Blog < ActiveRecord::Base
+      delegate_attributes :last_author, :errors => :fit, :writer => true, :to => :category
+    end
 
 ## Contributing
 

@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["addagger@gmail.com"]
   gem.homepage      = %q{http://vkvon.ru/projects/delegate_attributes}
   gem.description   = %q{Includes optional reader/writer delegation and unobtrusive errors validation}
-  gem.summary       = %q{Almost full attributes delegation from one model instance to another}
+  gem.summary       = %q{Delegate attributes from one model instance to another with errors validation}
 
   gem.rubyforge_project = "delegate_attributes"
   gem.add_development_dependency "activemodel"
