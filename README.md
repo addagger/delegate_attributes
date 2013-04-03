@@ -21,8 +21,27 @@ Or install it yourself as:
 ActiveRecord model:
 
     class Blog < ActiveRecord::Base
-      delegate_attributes :last_author, :errors => :fit, :writer => true, :to => :category
+      delegate_attributes :theme, :errors => :fit, :writer => true, :to => :category
     end
+
+Option `:errors => :fit` declares that i18n translations for errors messages now can be defined under:
+
+    en:
+      activerecord:
+        errors:
+          models:
+            blog:
+              attributes:
+                theme:
+                  blank: "Category theme can not be blank"
+            category:
+              attributes:
+                theme:
+                  blank: "Oops, can not be blank!.."
+
+Option `:errors => :false` disables errors validation inheritance.
+
+Option `:writer => true` delegates writer methods as well: `.theme=`.
 
 ## Contributing
 
