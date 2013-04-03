@@ -24,7 +24,7 @@ ActiveRecord model:
       delegate_attributes :theme, :errors => :fit, :writer => true, :to => :category
     end
 
-Option `:errors => :fit` declares that i18n translations for errors messages now can be defined under:
+Option `:errors => :fit` declares that i18n translations for errors messages now can be defined under `Blog` section within locale file:
 
     en:
       activerecord:
