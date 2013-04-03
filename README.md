@@ -39,7 +39,7 @@ Option `:errors => :fit` declares that i18n translations for errors messages now
                 theme:
                   blank: "Oops, can not be blank!.."
 
-Option `:errors => :false` disables errors validation inheritance.
+Option `:errors => false` disables errors validation inheritance.
 
 Option `:writer => true` delegates writer methods as well: `.theme=`.
 
